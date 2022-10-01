@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins";
+  background-color: #d6d3d3;
+  overflow-y: scroll;
+}
+
+.canvas-container {
+  display: flex;
+  flex-direction: column;
+  max-width: fit-content;
+}
+
+#canvas {
+  border: 1px solid black;
+  cursor: crosshair;
+  background-color: white;
+}
+
+#controls {
+  display: flex;
+  gap: 8px;
+}
+
+#controls #annotation-container {
+  flex: 1;
+}
+
+#controls #annotation-container #annotation-title {
+  font-size: 1.2em;
+  margin-bottom: 8px;
+}
+
+#controls #annotation-list {
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+  color:rgb(128, 128, 128);
+}
+
+#controls #annotation-list li {
+  list-style: none;
+  padding: 4px 8px;
+  border-radius: 4px;
+  background-color: #bebebe;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  color: black;
+  list-style-type: none;
+  max-width: 400px;
+  word-wrap: break-word;
+}
+
+button.deleteBtn {
+  color: rgb(128, 128, 128);
+  background: transparent;
+  font-family: Poppins;
+  border: none;
+  padding: 4px;
+  margin: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+button.deleteBtn:hover {
+  color: rgb(255, 0, 0);
+}
