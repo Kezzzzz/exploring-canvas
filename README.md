@@ -2,7 +2,7 @@
 
 This project is an exploration into canvas and its capabilities.
 
-Starting by being able to upload and image and annotate it with rectangles which can be drawn by the user.
+Starting by being able to upload an image and annotate it with rectangles which can be drawn by the user.
 
 Those annotations will then be tied to that image, and you can upload more images and create new annotations. And so on, and so on.
 
