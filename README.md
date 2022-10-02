@@ -73,3 +73,5 @@ There is some SERIOUS QOL improvements that can be made to this project. I will 
 - [ ] Make the whole thing responsive and mobile friendly
 - [ ] Be able to have custom colours for the rectangles
 - [ ] Be able to upload more than one image at a time
+
+#### Time spent - 6 hours as of 7:30pm 2/10/2022
