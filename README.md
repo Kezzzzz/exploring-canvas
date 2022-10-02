@@ -48,20 +48,28 @@ An issue I hit was overlapping rectangles would end up being cleared too when cl
 
 ### 7. Be able to upload an image from the user
 
-TBD
+I added the functionality to upload an image from the user and store it into the state and have the canvas display it. No complications here, it required to use the Image API and the FileReader API.
 
 ### 8. Be able to draw rectangles on top of the image
 
-TBD
+To do this, we need to track the annotations along with the image in the state. I created a new array of object which would store the annotations with the image and changed all the logic to listen for the `activeImage.annotations` insteads of just the `allSquares` array I was using through testing.
 
-### 9. Modify the state to handle images and their annotations
+Once this was added, again I was getting issues where clearing the rectangles would clear the background image too if they overlapped. So I needed to add logic to redraw the image when deleting rectangles, and also make sure it draws the image first and then the rectangles. So the rectangles would reappear above the image. There was a slight race condition with this, so putting the rectangle drawing in a very small setTimeout did the trick. Maybe refactoring into a promise is better?
 
-TBD
+### 9. Be able to add another image to the canvas on a blank sheet
+
+WIP
 
 ### 10. Be able to cycle through the images and their annotations like a carousel
 
-TBD
+WIP
 
 ## Enhancements!!
 
-soon:tm:
+There is some SERIOUS QOL improvements that can be made to this project. I will try to list them but they are forever being fixed and added.
+
+- [ ] Add a way to delete an image
+- [ ] Add a way to delete all annotations
+- [ ] Make the whole thing responsive and mobile friendly
+- [ ] Be able to have custom colours for the rectangles
+- [ ] Be able to upload more than one image at a time
