@@ -68,8 +68,6 @@ WIP
 
 ## Enhancements!!
 
-There is some SERIOUS QOL improvements that can be made to this project. I will try to list them but they are forever being fixed and added.
-
 - [ ] Add a way to delete an image
 - [ ] Add a way to delete all annotations
 - [ ] Make the whole thing responsive and mobile friendly
