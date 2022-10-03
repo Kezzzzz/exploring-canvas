@@ -38,7 +38,9 @@ I wanted to be able to add text to the rectangles. I found out that I could use 
 
 ### 5. Store the rectangles
 
-I wanted to be able to store the rectangles, so that I could draw them again when the page is refreshed. I found out that I could use `localStorage` to do this. I also needed to figure out how to store the rectangles in a way that I could draw them again. I found out that I could use an array of objects to do this.
+I wanted to be able to store the rectangles somewhere, first step is to just store them in the local state of the page (not localStorage yet). I created an empty array and then would push the data of each rectangle into it.
+
+TODO: Add the state to local storage and use getter setters.
 
 ### 6. Be able to delete a rectangle
 
